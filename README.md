@@ -54,7 +54,7 @@ Once you've run the script, and look at the source code and checkout the followi
 
 To explore this SVM a little bit more, let's make some of our own data and interpret the results. Here's an example of an image I've created through photoshop. 
 
-![alt tag](https://github.com/theleastinterestingcoder/SVM_digits/blob/master/5_readme.png)
+![alt tag](https://github.com/theleastinterestingcoder/SVM_digits/blob/master/resources/5_readme.png)
 
 ```
 python image_to_digit.py 5.png

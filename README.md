@@ -71,7 +71,7 @@ To explore this SVM a little bit more, let's make some of our own data and inter
 
 First, install skimage. It's a useful open-source image processing library that is well integrated into scikit. We'll need it for the script that I've written. (Download Link here: http://scikit-image.org/download.html)
 
-![alt tag](https://github.com/theleastinterestingcoder/SVM_digits/blob/master/5.png)
+<div style="width:500px;"><img src ="5.png" /></div>
 
 ```
 python image_to_digit.py 5.png

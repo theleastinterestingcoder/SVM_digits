@@ -103,7 +103,7 @@ Disadvantages of SVM's:
 performances. </li>
     <li> SVMs do not directly provide probability estimates, these are calculated using an expensive five-fold cross-validation (see Scores and probabilities, below). </li>
 </ul>
-<h3> Files </h3>
+
 
 Because SVM's work well in classification problems with a high number of dimensions, they are mostly often seen for classifying images. 
 

@@ -3,9 +3,40 @@ SVM_digits
 
 Recognizing handwritten digits using support vector machines
 
+<h3> Introduction </h3>
+
+
+SVM's are *classification* techinques commonly seen in:
+<ul>
+    <li> Image recognition (Face or not Face?) </li>
+    <li> Protein Classification </li>
+    <li> Hand Written Classification (this demo) </li>
+
+</ul>
+
+Advantages of SVM's:
+<ul>
+    <li> Effective in high dimensional spaces (like in image recognition where each pixel is a dimension) </li>
+    <li> Still effective in cases where number of dimensions is greater than the number of samples. </li>
+    <li> Uses a subset of training points in the decision function (called support vectors), so it is also memory efficient. </li>
+    <li> Versatile: different Kernel functions can be specified for the decision function. Common kernels are provided, but it is also possible to specify custom kernels. </li>
+</ul>
+
+
+Disadvantages of SVM's:
+<ul>
+    <li> If the number of features is much greater than the number of samples, the method is likely to give poor 
+performances. </li>
+    <li> SVMs do not directly provide probability estimates, these are calculated using an expensive five-fold cross-validation (see Scores and probabilities, below). </li>
+</ul>
 <h3> Files </h3>
 
-There are three files in this tutorial:
+
+Source: http://scikit-learn.org/stable/modules/svm.html
+
+<h3> Files in this directory <h3>
+
+There are three files in this directory:
 <ul>
     <li> *tutorial.py* - the tutorial on SVM from scikit</li>
     <li> *image_to_digit.py* which converts an image to digit with an SVM </li>
@@ -19,13 +50,13 @@ If you haven't installed sci-kit already, checkout http://scikit-learn.org/stabl
 
 The instructions there are pretty easy to follow. 
 
-<h3> Running the example script </h3>
+<h3> Running the Example Script </h3>
 
 Once you have sci-kit installed, the example script written by Gael Varoquaux runs right out of the box:
 
-'''
+```
 python plot_digits_classification.py
-'''
+```
 
 Once you've run the script, and look at the source code (digit_classification.py) and checkout the following questions. (5-10 minutes)
 <ol>
@@ -36,7 +67,7 @@ Once you've run the script, and look at the source code (digit_classification.py
 </ol>
 
 
-<h3> Classifying your own image <h3>
+<h3> Classifying your own image </h3>
 
 To explore this SVM a little bit more, let's make some of our own data and interpret the results. 
 
@@ -59,6 +90,8 @@ Use photoshop, paint, gimp (or any other image editing software), and answer the
     <li> What are some issues that this classifier has? </li>
     <li> What's more important? Good data or good classifier? </li>
 </ul>
+
+
 
 
 

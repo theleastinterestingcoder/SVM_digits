@@ -3,6 +3,16 @@ SVM_digits
 
 Recognizing handwritten digits using support vector machines
 
+<h3> Files </h3>
+
+There are three files in this tutorial:
+<ul>
+    <li> *tutorial.py* - the tutorial on SVM from scikit</li>
+    <li> *image_to_digit.py* which converts an image to digit with an SVM </li>
+    <li> *svm_util.py* which supports image_to_digit.py</li>
+</ul>
+
+
 <h3> Installing Sci-kit </h3>
 
 If you haven't installed sci-kit already, checkout http://scikit-learn.org/stable/install.html

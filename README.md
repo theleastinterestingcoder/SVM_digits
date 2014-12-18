@@ -60,7 +60,12 @@ To explore this SVM a little bit more, let's make some of our own data and inter
 python image_to_digit.py 5.png
 ```
 
-When creating your own image, it is _very_ important to create an image that is  8-pixel by 8-pixel. Using any other image size will cause the script to crash (since the SVM has only been trained on 8x8 pizel images and doesn't know how to handle images of higher dimensions). In photoshop, this can be adjusted in Top Menu -> Image -> Canvas Size.
+When creating your own image, it is _very_ important to create an image that is  _8-pixel_ by _8-pixel_ in size. Using any other image size will cause the script to crash (since the SVM has only been trained on 8x8 pizel images and doesn't know how to handle images of higher dimensions). In photoshop, this can be adjusted in Top Menu -> Image -> Canvas Size.
+
+If you want to execute the script with your own image, use the syntax:
+```
+python image_to_digit.py my_file.png
+```
 
 Some interesting questions for you to try out: 
 <ol>
@@ -75,8 +80,8 @@ Some interesting questions for you to try out:
 
 <ul>
     <li> How well does the classifier handle "bad" inputs? </li>
-    <li> What do you think the behavoir of this classifier would be if it had a "poor" training set? </li>
-    <li> What are some issues that this classifier has? </li>
+    <li> What do you think the behavoir of this classifier would be if it had a poor training set? </li>
+    <li> What are some issues that this classifier has? What are some ways that it intelligent and not intelligent? </li>
     <li> What's more important? Good data or good classifier? </li>
 </ul>
 
@@ -85,7 +90,7 @@ Some interesting questions for you to try out:
 
 Advantages of SVM's:
 <ul>
-    <li> Effective in high dimensional spaces (like in image recognition where each pixel is a dimension) </li>
+    <li> Effective in high dimensional spaces. </li>
     <li> Still effective in cases where number of dimensions is greater than the number of samples. </li>
     <li> Uses a subset of training points in the decision function (called support vectors), so it is also memory efficient. </li>
     <li> Versatile: different Kernel functions can be specified for the decision function. Common kernels are provided, but it is also possible to specify custom kernels. </li>
@@ -99,6 +104,8 @@ performances. </li>
     <li> SVMs do not directly provide probability estimates, these are calculated using an expensive five-fold cross-validation (see Scores and probabilities, below). </li>
 </ul>
 <h3> Files </h3>
+
+Because SVM's work well in classification problems with a high number of dimensions, they are mostly often seen for classifying images. 
 
 
 Source: http://scikit-learn.org/stable/modules/svm.html

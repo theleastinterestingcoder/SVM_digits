@@ -34,7 +34,7 @@ performances. </li>
 
 Source: http://scikit-learn.org/stable/modules/svm.html
 
-<h3> Files in this directory <h3>
+<h3> Files in this directory </h3>
 
 There are three files in this directory:
 <ul>
@@ -46,19 +46,17 @@ There are three files in this directory:
 
 <h3> Installing Sci-kit </h3>
 
-If you haven't installed sci-kit already, checkout http://scikit-learn.org/stable/install.html
-
-The instructions there are pretty easy to follow. 
+If you haven't installed sci-kit already, checkout http://scikit-learn.org/stable/install.html . The instructions there are pretty easy to follow. 
 
 <h3> Running the Example Script </h3>
 
 Once you have sci-kit installed, the example script written by Gael Varoquaux runs right out of the box:
 
 ```
-python plot_digits_classification.py
+python tutorial.py
 ```
 
-Once you've run the script, and look at the source code (digit_classification.py) and checkout the following questions. (5-10 minutes)
+Once you've run the script, and look at the source code (tutorial.py) and checkout the following questions. (5-10 minutes)
 <ol>
     <li> How big the entire dataset? </li>
     <li> What are the dimensions of each image? </li>
@@ -71,7 +69,14 @@ Once you've run the script, and look at the source code (digit_classification.py
 
 To explore this SVM a little bit more, let's make some of our own data and interpret the results. 
 
-First, install skimage. It's a useful open-source image processing library that is well integrated into scikit. We'll need it for the script that I've written. (Downlload Link here: http://scikit-image.org/download.html)
+First, install skimage. It's a useful open-source image processing library that is well integrated into scikit. We'll need it for the script that I've written. (Download Link here: http://scikit-image.org/download.html)
+
+![alt tag](https://github.com/theleastinterestingcoder/SVM_digits/blob/master/5.png)
+
+```
+python image_to_digit.py 5.png
+```
+
 
 Use photoshop, paint, gimp (or any other image editing software), and answer the following questions:
 <ol>

@@ -3,18 +3,22 @@
 
     written by Quan Zhou on 12/16/14
 
-    Converts an 8x8 pixel image to numpy. Make sure 
-'''
+    Reads an 8x8 image and guesses the numerical digit associated with it. 
 
-import numpy as np
-from skimage import io
-from svm_util import train_digit_classifier
+    Example argument: python image_to_digit.py 5.png
+'''
+import sys                                      # To parse command line arguments
+import numpy as np                              # Python's scientific Package
+from skimage import io                          # skimage's io package reads image formats
+from svm_util import train_digit_classifier     # The util file I wrote that trains a classifier
 
 # Name of the image we want to classify
-fname = '5.png'     # IMPORTANT! This can be any image format as long as it is a 8-pixel by 8-pixel image. 
+fname = sys.argv[1]     # IMPORTANT! This can be any image format as long as it is a 8-pixel by 8-pixel image. 
+
 
 # Train the classifier
 classifier = train_digit_classifier()   #Check out digit_classifier.py for more details
+
 
 #Convert .png file -> python readible matrix (numpy)
 pixel_data = io.imread(fname, as_grey='true')

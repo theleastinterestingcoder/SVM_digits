@@ -13,7 +13,7 @@ from skimage import io                          # skimage's io package reads ima
 from svm_util import train_digit_classifier     # The util file I wrote that trains a classifier
 
 # Name of the image we want to classify
-fname = sys.argv[1]     # IMPORTANT! This should be a .png that is  8-pixel by 8-pixel in size. 
+fname = sys.argv[1]     # IMPORTANT! This can be any image format as long as it is a 8-pixel by 8-pixel image. 
 
 
 # Train the classifier

@@ -62,6 +62,8 @@ python image_to_digit.py 5.png
 
 When creating your own image, it is _very_ important to create an image that is  _8-pixel_ by _8-pixel_ in size. Using any other image size will cause the script to crash (since the SVM has only been trained on 8x8 pizel images and doesn't know how to handle images of higher dimensions). In photoshop, this can be adjusted in Top Menu -> Image -> Canvas Size.
 
+Finally, be sure to be using a .png format; scikit-image's 'imread' can only read '.png' formats. 
+
 If you want to execute the script with your own image, use the syntax:
 ```
 python image_to_digit.py my_file.png

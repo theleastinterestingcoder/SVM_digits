@@ -1,7 +1,20 @@
+'''
+    tutorial.py
+
+    Author: Gael Varoquaux <gael dot varoquaux at normalesup dot org>
+    License: BSD 3 clause
+    
+    Adapted by: Quan Zhou
+    Changes: None to the code, but some comments were changed for clarity. 
+
+    This is scikit tutorial in which the scikit's digits dataset (8x8 grayscale pixels)
+    is fed through a Support Vector Machine, and classified as a digit. 
+'''
+
+
 print(__doc__)
 
-# Author: Gael Varoquaux <gael dot varoquaux at normalesup dot org>
-# License: BSD 3 clause
+
 
 # Standard scientific Python imports
 import matplotlib.pyplot as plt

@@ -84,7 +84,6 @@ Some interesting questions for you to try out:
     <li> How well does the classifier handle "bad" inputs? </li>
     <li> What do you think the behavoir of this classifier would be if it had a poor training set? </li>
     <li> What are some issues that this classifier has? What are some ways that it intelligent and not intelligent? </li>
-    <li> What's more important? Good data or good classifier? </li>
 </ul>
 
 

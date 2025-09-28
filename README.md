@@ -106,7 +106,7 @@ performances. </li>
 </ul>
 
 
-Because SVM's work well in classification problems with a high number of dimensions, they are mostly often seen for classifying images. 
+Because SVM's work well in classification problems with a high number of dimensions, they are mostly often seen for classifying images
 
 
 Source: http://scikit-learn.org/stable/modules/svm.html
